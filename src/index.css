@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  --color-ky: #F5C800;
+  --color-ky-hover: #E0B400;
+  --color-kb: #0A0A0A;
+  --color-kdark: #111111;
+  --color-kcard: #1A1A1A;
+  --color-kcard2: #222222;
+  --color-kborder: #2C2C2C;
+  --color-kmuted: #5A5A5A;
+  --color-ktext: #F0F0F0;
+  --font-display: 'Barlow Condensed', sans-serif;
+  --font-body: 'Inter', sans-serif;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #2C2C2C transparent;
+}
+
+*::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+*::-webkit-scrollbar-track { background: transparent; }
+*::-webkit-scrollbar-thumb { background: #2C2C2C; border-radius: 3px; }
+*::-webkit-scrollbar-thumb:hover { background: #3C3C3C; }
+
+body {
+  background-color: #0A0A0A;
+  color: #F0F0F0;
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.font-display { font-family: 'Barlow Condensed', sans-serif; }
+
+.kings-card {
+  background: #1A1A1A;
+  border: 1px solid #2C2C2C;
+}
+
+.kings-card-hover {
+  transition: border-color 0.2s, background 0.2s;
+}
+.kings-card-hover:hover {
+  border-color: #F5C800;
+  background: #1E1E1E;
+}
+
+.kings-btn-primary {
+  background: #F5C800;
+  color: #0A0A0A;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 0.625rem 1.5rem;
+  border: none;
+  cursor: pointer;
+  transition: background 0.15s, transform 0.1s;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.kings-btn-primary:hover { background: #E0B400; }
+.kings-btn-primary:active { transform: scale(0.98); }
+.kings-btn-primary:disabled { background: #444; color: #888; cursor: not-allowed; }
+
+.kings-btn-secondary {
+  background: transparent;
+  color: #F0F0F0;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 0.625rem 1.5rem;
+  border: 1px solid #2C2C2C;
+  cursor: pointer;
+  transition: border-color 0.15s, color 0.15s;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.kings-btn-secondary:hover { border-color: #F5C800; color: #F5C800; }
+
+.kings-input {
+  background: #111111;
+  border: 1px solid #2C2C2C;
+  color: #F0F0F0;
+  padding: 0.625rem 1rem;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.9rem;
+  outline: none;
+  transition: border-color 0.15s;
+  width: 100%;
+}
+.kings-input:focus { border-color: #F5C800; }
+.kings-input::placeholder { color: #5A5A5A; }
+
+.kings-badge {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 700;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.2rem 0.6rem;
+}
+
+.slide-in {
+  animation: slideIn 0.25s ease-out;
+}
+@keyframes slideIn {
+  from { transform: translateX(100%); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+.fade-in {
+  animation: fadeIn 0.2s ease-out;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
