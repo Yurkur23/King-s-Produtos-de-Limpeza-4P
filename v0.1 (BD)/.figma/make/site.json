@@ -1,0 +1,11 @@
+{
+  "title": "kings br",
+  "description": "This web application offers a user-friendly platform for Kings Produtos de Limpeza, showcasing their cleaning products with a modern, responsive design that enhances customer engagement and brand visibility.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}

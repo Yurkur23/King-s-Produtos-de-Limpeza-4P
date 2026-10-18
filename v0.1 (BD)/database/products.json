@@ -1,0 +1,283 @@
+[
+  {
+    "id": 1,
+    "price": 44,
+    "stock": 18,
+    "minStock": 5,
+    "brand": "VONIXX",
+    "name": "Intense",
+    "volume": "500ml",
+    "description": "Limpador de interiores automotivos de alto desempenho. Atua sobre plásticos, painéis, couro, borracha e revestimentos internos, removendo sujeiras e deixando superfícies levemente hidratadas sem aspecto gorduroso.",
+    "category": "Limpeza Automotiva",
+    "barcode": "7898615710101",
+    "specs": [
+      "Superfícies internas",
+      "pH neutro",
+      "Não resseca materiais",
+      "Pronto para uso"
+    ],
+    "image": "/products/image-2.png",
+    "active": true
+  },
+  {
+    "id": 2,
+    "price": 38,
+    "stock": 24,
+    "minStock": 5,
+    "brand": "VONIXX",
+    "name": "Glazy",
+    "volume": "500ml",
+    "description": "O Glazy da Vonixx serve para limpar, condicionar e proteger vidros e superfícies lisas de automóveis ou eletrônicos. Ele cria uma película de toque liso que diminui o atrito das palhetas do limpador, evitando riscos e marcas d'água. O produto também possui uma versão específica (Anti-Fog) que impede o embaçamento interno dos vidros em dias frios ou chuvosos.",
+    "category": "Limpeza Automotiva",
+    "barcode": "7898615710102",
+    "specs": [
+      "Efeito hidrofóbico",
+      "Sem amônia",
+      "Para vidros e espelhos",
+      "Sem manchas"
+    ],
+    "image": "/products/image-3.png",
+    "active": true
+  },
+  {
+    "id": 3,
+    "price": 38,
+    "stock": 3,
+    "minStock": 5,
+    "brand": "VONIXX",
+    "name": "Delet",
+    "volume": "500ml",
+    "description": "Vonixx Delet é um limpador de alta performance desenvolvido para remover sujeiras severas, óleos e graxas de pneus e borrachas. Ele elimina o aspecto encardido e marrom, devolvendo a cor preta original e deixando a superfície totalmente preparada para receber condicionadores.",
+    "category": "Limpeza Automotiva",
+    "barcode": "7898615710103",
+    "specs": [
+      "Reação química visível",
+      "Remove contaminação ferrosa",
+      "Remove alcatrão",
+      "Seguro para pinturas envernizadas"
+    ],
+    "image": "/products/image-4.png",
+    "active": true
+  },
+  {
+    "id": 4,
+    "price": 44,
+    "stock": 15,
+    "minStock": 5,
+    "brand": "VONIXX",
+    "name": "Prizm",
+    "volume": "500ml",
+    "description": "Quick detailer com tecnologia SiO2 para acabamento brilhoso e proteção de curta duração entre lavagens. Ideal para retoques rápidos, remove poeira fina e marcas leves enquanto deposita uma fina camada de proteção.",
+    "category": "Limpeza Automotiva",
+    "barcode": "7898615710104",
+    "specs": [
+      "Tecnologia SiO2",
+      "Brilho intenso",
+      "Proteção rápida",
+      "Uso entre lavagens"
+    ],
+    "image": "/products/image-5.png",
+    "active": true
+  },
+  {
+    "id": 5,
+    "price": 42,
+    "stock": 30,
+    "minStock": 8,
+    "brand": "VONIXX",
+    "name": "Plus",
+    "volume": "500ml",
+    "description": "Limpador multiuso concentrado para uso externo e interno. Dilúível em diferentes concentrações conforme o nível de sujeira, atuando desde a limpeza leve de tecidos e carpetes até descontaminação pesada de rodas e pneus.",
+    "category": "Limpeza Automotiva",
+    "barcode": "7898615710105",
+    "specs": [
+      "Concentrado (diluível)",
+      "Multiuso interno/externo",
+      "Alta versatilidade",
+      "Fórmula biodegradável"
+    ],
+    "image": "/products/image-6.png",
+    "active": true
+  },
+  {
+    "id": 6,
+    "price": 56,
+    "stock": 8,
+    "minStock": 4,
+    "brand": "VONIXX",
+    "name": "Sio2 Pro",
+    "volume": "500ml",
+    "description": "Selante cerâmico spray profissional com alta concentração de SiO2. Proporciona proteção duradoura, repelência à água com efeito beading pronunciado e brilho intenso. Compatível com carrocerias enceradas ou com coating.",
+    "category": "Limpeza Automotiva",
+    "barcode": "7898615710106",
+    "specs": [
+      "Alta concentração SiO2",
+      "Durabilidade de até 3 meses",
+      "Efeito beading extremo",
+      "Superfícies pintadas, cromadas e plásticas"
+    ],
+    "image": "/products/image-7.png",
+    "active": true
+  },
+  {
+    "id": 7,
+    "price": 65,
+    "stock": 2,
+    "minStock": 5,
+    "brand": "VONIXX",
+    "name": "Restaurax",
+    "volume": "500ml",
+    "description": "Restaurax é um renovador de alta performance desenvolvido para restaurar e proteger plásticos internos e externos. Ele renova superfícies desgastadas pelo tempo, devolve o brilho original da peça e evita que ela resseque ou desbote devido à ação dos raios UV.",
+    "category": "Limpeza Automotiva",
+    "barcode": "7898615710107",
+    "specs": [
+      "Restaura plásticos desbotados",
+      "Resistente à lavagem",
+      "Sem silicone oleoso",
+      "Para uso interno e externo"
+    ],
+    "image": "/products/image-8.png",
+    "active": true
+  },
+  {
+    "id": 8,
+    "price": 32,
+    "stock": 22,
+    "minStock": 5,
+    "brand": "VONIXX",
+    "name": "V-Floc",
+    "volume": "500ml",
+    "description": "Snow foam concentrado para pré-lavagem automotiva. Gera espuma densa que envolve a carroceria, amolecendo e suspendendo partículas de sujeira pesada antes da lavagem com água, reduzindo o risco de marcar a pintura.",
+    "category": "Limpeza Automotiva",
+    "barcode": "7898615710108",
+    "specs": [
+      "Pré-lavagem sem contato",
+      "Espuma densa e aderente",
+      "Compatível com lança-espuma",
+      "Seguro para pinturas e plásticos"
+    ],
+    "image": "/products/image-9.png",
+    "active": true
+  },
+  {
+    "id": 9,
+    "price": 68,
+    "stock": 12,
+    "minStock": 4,
+    "brand": "MAGIL CLEAN",
+    "name": "Ultra Limpador",
+    "volume": "1,15L",
+    "description": "Limpador multiuso profissional de alta concentração. Eficaz na remoção de gordura, fuligem, graxas e sujeiras incrustadas em ambientes domésticos, comerciais e industriais. Pode ser diluído para economizar e adaptar ao uso.",
+    "category": "Limpeza Geral",
+    "barcode": "7897452310001",
+    "specs": [
+      "Alta concentração",
+      "Diluível 1:10 a 1:50",
+      "Uso doméstico e industrial",
+      "Remove gordura pesada"
+    ],
+    "image": "/products/image-10.png",
+    "active": true
+  },
+  {
+    "id": 10,
+    "price": 162,
+    "stock": 6,
+    "minStock": 3,
+    "brand": "MAGIL CLEAN",
+    "name": "Ultra Limpador",
+    "volume": "5L",
+    "description": "Versão econômica 5L do Ultra Limpador Magil Clean para uso intensivo. Ideal para empresas, oficinas e estabelecimentos com alta demanda de limpeza. Mesmo poder de remoção de gordura e sujeira com melhor custo por uso.",
+    "category": "Limpeza Geral",
+    "barcode": "7897452310002",
+    "specs": [
+      "Embalagem econômica 5L",
+      "Alta concentração",
+      "Uso profissional",
+      "Custo reduzido por litro"
+    ],
+    "image": "/products/image-11.png",
+    "active": true
+  },
+  {
+    "id": 11,
+    "price": 38,
+    "stock": 4,
+    "minStock": 5,
+    "brand": "JANU",
+    "name": "Janu Black",
+    "volume": "1L",
+    "description": "Renovador e escurecedor de pneus e borrachas. Proporciona acabamento escuro, uniforme e brilhante nos pneus, restaurando a aparência de novo. Também atua em borrachas de para-choque e peças externas de borracha.",
+    "category": "Limpeza Automotiva",
+    "barcode": "7899871220011",
+    "specs": [
+      "Renova cor dos pneus",
+      "Efeito brilho intenso",
+      "Resistente à água",
+      "Aplicação rápida"
+    ],
+    "image": "/products/image-12.png",
+    "active": true
+  },
+  {
+    "id": 12,
+    "price": 90,
+    "stock": 7,
+    "minStock": 3,
+    "brand": "JANU",
+    "name": "Janu Black",
+    "volume": "5L",
+    "description": "Embalagem profissional 5L do Janu Black para quem usa em grande volume. Ideal para lava-rápidos, detailers e oficinas. Mesmo resultado de acabamento escuro e brilhante nos pneus com excelente rendimento.",
+    "category": "Limpeza Automotiva",
+    "barcode": "7899871220012",
+    "specs": [
+      "Embalagem profissional 5L",
+      "Alto rendimento",
+      "Ideal para lava-rápidos",
+      "Brilho e escurecimento intenso"
+    ],
+    "image": "/products/image-13.png",
+    "active": true
+  },
+  {
+    "id": 13,
+    "price": 75,
+    "stock": 9,
+    "minStock": 3,
+    "brand": "SIGMA",
+    "name": "Snow Pump",
+    "volume": "2L",
+    "description": "Bomba de espuma manual para aplicação de snow foam e produtos de pré-lavagem. Gera espuma densa com ajuste de concentração no bocal. Compatível com qualquer shampoo ou snow foam. Reservatório translúcido para controle de nível.",
+    "category": "Limpeza Automotiva",
+    "barcode": "7895631340013",
+    "specs": [
+      "Reservatório 2L translúcido",
+      "Bocal com regulagem de espuma",
+      "Compatível com qualquer produto",
+      "Resistente a produtos químicos"
+    ],
+    "image": "/products/image-14.png",
+    "active": true
+  },
+  {
+    "id": 14,
+    "price": 299,
+    "stock": 3,
+    "minStock": 2,
+    "brand": "SIGMA",
+    "name": "Banqueta para Mecânico",
+    "volume": "Unidade",
+    "description": "Banqueta giratória resistente para mecânicos e profissionais de detailing. Altura ajustável com rodízios de borracha para deslizamento suave no piso. Assento acolchoado para longas jornadas de trabalho. Suporta até 120 kg.",
+    "category": "Equipamentos",
+    "barcode": "7895631340014",
+    "specs": [
+      "Altura regulável",
+      "Rodízios emborrachados",
+      "Assento acolchoado",
+      "Capacidade 120 kg",
+      "Estrutura em aço"
+    ],
+    "image": "/products/image-15.png",
+    "active": true
+  }
+]

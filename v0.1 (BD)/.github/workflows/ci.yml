@@ -1,0 +1,61 @@
+name: Testes Kings
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  application:
+    name: Build, API PostgreSQL e PWA
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:17-alpine
+        env:
+          POSTGRES_DB: kings_test
+          POSTGRES_USER: kings
+          POSTGRES_PASSWORD: kings_test_password
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U kings -d kings_test"
+          --health-interval 5s --health-timeout 5s --health-retries 15
+    env:
+      TEST_DATABASE_URL: postgresql://kings:kings_test_password@localhost:5432/kings_test
+      DATABASE_URL: postgresql://kings:kings_test_password@localhost:5432/kings_test
+      APP_ORIGIN: http://127.0.0.1:3080
+      API_PORT: 3080
+      SEED_DEMO: 'true'
+      PAYMENT_MODE: mock
+      COOKIE_SECURE: 'false'
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '24'
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+      - run: npm test
+      - run: npx playwright install --with-deps chromium
+      - run: npm run test:e2e
+      - uses: actions/upload-artifact@v7
+        if: failure()
+        with:
+          name: diagnostico-playwright
+          path: |
+            playwright-report/
+            test-results/
+          retention-days: 7
+  docker:
+    name: Inicialização com Docker Compose
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - run: docker compose up --build -d --wait --wait-timeout 120
+      - run: curl --fail http://localhost:8080/api/health
+      - if: failure()
+        run: docker compose logs --no-color
+      - if: always()
+        run: docker compose down
